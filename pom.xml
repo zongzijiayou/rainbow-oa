@@ -17,6 +17,7 @@
       <maven-jar-plugin.version>3.0.0</maven-jar-plugin.version>
       <druid.version>1.1.14</druid.version>
       <mysql.version>8.0.18</mysql.version>
+      <swagger.version>2.9.2</swagger.version>
       <activiti.starter.version>6.0.0</activiti.starter.version>
   </properties>
   
@@ -29,15 +30,29 @@
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-web</artifactId>
 	</dependency>
-	<dependency>
+<!--      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-security</artifactId>
+    </dependency> -->
+<!-- 	<dependency>
         <groupId>org.activiti</groupId>
         <artifactId>activiti-spring-boot-starter-basic</artifactId>
         <version>${activiti.starter.version}</version>
-    </dependency>
+    </dependency> -->
     <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
         <version>${mysql.version}</version>
     </dependency>
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger2</artifactId>
+		<version>${swagger.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger-ui</artifactId>
+		<version>${swagger.version}</version>
+	</dependency> 
   </dependencies>
 </project>
